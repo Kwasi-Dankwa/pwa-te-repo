@@ -19,6 +19,37 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
+      //Easily create HTML files to serve your bundles
+      new HtmlWebpackPlugin({
+        template: './index.html',
+        title: 'JATE'
+      }),
+      //supports compiling a service worker file provided via swSrc , and injecting into that service worker a list of URLs and revision information for precaching based on the webpack asset pipeline.
+      new InjectManifest({
+        swSrc: './src/sw.js',
+        swDest: 'service-worker.js',
+      }),
+      // generates a 'manifest.json' for the Progressive Web Application, with auto icon resizing and fingerprinting support
+      new WebpackPwaManifest({
+        name: 'JATE Text-Editor',
+        short_name: 'JATE',
+        description: 'Keep track of important tasks!',
+        background_color: '#7eb4e2',
+        theme_color: '#7eb4e2',
+        start_url: './',
+        publicPath: './',
+        inject: true,
+        fingerprints: false,
+        icons: [
+          {
+            src: path.resolve('assets/images/logo.png'),
+            sizes: [96, 128, 192, 256, 384, 512],
+            destination: path.join('assets', 'icons'),
+          },
+        ],
+      }),
+
+
 
     ],
 
@@ -39,7 +70,8 @@ module.exports = () => {
           use: {
             loader: 'babel-loader',
             options: {
-              presets: ['@babel/preset-env']
+              presets: ['@babel/preset-env'],
+              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime']
             }
           }
         }
