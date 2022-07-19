@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 ### Progressive Web Applications (PWA): Text Editor
 
 ### Description
@@ -40,3 +42,12 @@ WHEN I deploy to Heroku
 THEN I should have proper build scripts for a webpack application
 
 ```
+
+
+  ### Contact
+
+  Please contact me with any questions using either of the avenues below. 
+
+  Github URL: https://github.com/Kwasi-Dankwa
+
+  Email: edankwa14@gmail.co
