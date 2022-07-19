@@ -40,12 +40,13 @@ WHEN I register a service worker
 THEN I should have my static assets pre cached upon loading along with subsequent pages and static assets
 WHEN I deploy to Heroku
 THEN I should have proper build scripts for a webpack application
+```
 
 ### Screenshot
 <img width="956" alt="image" src="https://user-images.githubusercontent.com/104780360/179669539-87cc1155-6b8d-4425-96b0-898bfbcbcc4c.png">
 
 
-```
+
 ### Deployed url
 https://salty-thicket-08453.herokuapp.com/
 
