@@ -4,7 +4,7 @@
 
 ### Description
 
-This app will be a single-page application that meets the PWA criteria. It features a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The application will also function offline.
+This app will be a single-page application that meets the PWA criteria. It features a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The application will also function offline
 
 ### User Story
 ```
@@ -41,7 +41,13 @@ THEN I should have my static assets pre cached upon loading along with subsequen
 WHEN I deploy to Heroku
 THEN I should have proper build scripts for a webpack application
 
+### Screenshot
+<img width="956" alt="image" src="https://user-images.githubusercontent.com/104780360/179669539-87cc1155-6b8d-4425-96b0-898bfbcbcc4c.png">
+
+
 ```
+### Deployed url
+https://salty-thicket-08453.herokuapp.com/
 
 
   ### Contact
@@ -51,3 +57,5 @@ THEN I should have proper build scripts for a webpack application
   Github URL: https://github.com/Kwasi-Dankwa
 
   Email: edankwa14@gmail.co
+  
+  Project will be Updated in future.
