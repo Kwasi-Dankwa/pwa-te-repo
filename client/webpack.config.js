@@ -26,7 +26,7 @@ module.exports = () => {
       }),
       //supports compiling a service worker file provided via swSrc , and injecting into that service worker a list of URLs and revision information for precaching based on the webpack asset pipeline.
       new InjectManifest({
-        swSrc: './src/sw.js',
+        swSrc: './src-sw.js',
         swDest: 'service-worker.js',
       }),
       // generates a 'manifest.json' for the Progressive Web Application, with auto icon resizing and fingerprinting support
@@ -42,9 +42,9 @@ module.exports = () => {
         fingerprints: false,
         icons: [
           {
-            src: path.resolve('assets/images/logo.png'),
+            src: path.resolve('src/images/logo.png'),
             sizes: [96, 128, 192, 256, 384, 512],
-            destination: path.join('assets', 'icons'),
+            destination: path.join('src', 'icons'),
           },
         ],
       }),
